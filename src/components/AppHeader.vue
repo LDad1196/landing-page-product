@@ -25,9 +25,9 @@ export default {
 </script>
 
 <template>
-    <header class="container d-flex justify-content-between align-items-center p-2">
+    <header class="d-flex justify-content-between align-items-center p-2">
         <div class="row m-0">
-            <div class="col-3 p-0">
+            <div class="col-3 p-0 justify-content-center">
                 <img src="/logo.png" alt="logo" class="img-fluid">
             </div>
             <div class="col-9 d-flex justify-content-end align-items-center">
@@ -53,7 +53,7 @@ export default {
                 <!-- Menu di navigazione per schermi più grandi -->
                  
                 <ul class=" ul-header d-none d-md-flex justify-content-between align-items-center">
-                    <!-- JavaScript -->
+                    <li nav.name in nav></li>
                 </ul>
             </div>
         </div>
@@ -61,4 +61,7 @@ export default {
 </template>
 
 <style scoped>
+header {
+    background-color: #222;
+}
 </style>
